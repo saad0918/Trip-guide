@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="../index.js"></script>
+    <script src = "../js/index.js"></script>
     <script src="https://kit.fontawesome.com/01f94e886a.js" crossorigin="anonymous"></script>
     <title>TRAVEL WEBSITE | WELCOME</title>
 </head>
@@ -39,7 +39,7 @@
                        <h2 class="text-gray md-heading">Call</h2>
                        <p>+91 7782922529</p>
                     </div>
-                    <img src="./img.jpg" alt="company-loctions">
+                    <img src="../assets/img.avif" alt="company-loctions">
                 </div>
                 <form action="" class="form">
                     <h1 class="lg-heading text-black">Contact us</h1>
@@ -60,15 +60,7 @@
                         <label for="message">Message</label>
                         <textarea name="" id="message"></textarea>
                     </div>
-                    <div class="container">
-                        <button type="submit" class="form-btn" onclick="openPopup()">Submit</button>
-                        <div id="popup" class="popup">
-                            <img src="./src/404-tick.png" alt="">
-                            <h2>Thank You</h2>
-                            <p>Your details have been successfully submitted</p>
-                            <button type="button" onclick="closePopup()">OK</button>
-                        </div>
-                    </div>
+                    <button type="submit" class="form-btn" onclick="printForm()">Submit</button>
                 </form>
             </div>
         </div>
