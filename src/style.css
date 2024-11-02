@@ -16,7 +16,7 @@
     transform: translate(-50%, -50%);
 }
 header{
-    height: 95vh;
+    height: 100vh;
     background: url(./img.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,13 +134,13 @@ header{
 }
 
 .row{
-    height: 300px;
+    height: 250px;
     background: #fff;
     box-shadow: 0px 0px 20px 0px #aaa;
 }
 
 .row1{
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 .row1 .img-box, .row2 .text-box{
@@ -159,7 +159,7 @@ header{
 
 .row .text-box{
     height: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .row .img-box img{
@@ -367,10 +367,60 @@ header{
     object-position: left;
 }
 
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Makes it overlay */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    background: white; /* Background for visibility */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s, top 0.5s;
+
+}
+
+.popup.open-popup {
+    display: block; /* Show when the class is added */
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50px;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 40px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: grab;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 /* ############# form styling ######## */
 .form-wrapper .form{
     height: 700px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background: #fff;
     width: 49%;
     float: right;
@@ -402,14 +452,14 @@ header{
 }
 .form-wrapper .form textarea{
     width: 100%;
-    height: 300px;
+    height: 250px;
     padding: 1rem;
 }
 
 .form-btn{
     display: block;
     margin: 0 auto;
-    padding: 0.5em 3em;
+    padding: 0.3em 2em;
     font-size: 1.8rem;
     text-transform: uppercase;
     background: palevioletred;
